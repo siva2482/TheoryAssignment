@@ -1,0 +1,3 @@
+Encapsulation is an oops concept with which we can achieve to control scope of variables.
+It is aprocess in which data nd code are wrapped together.so variables inside the class can be  accessed only through the public metjids available inside the class .so visibility of code is controlled.
+Page object model wraps the locaors inside the class and with it public methods.so encapsulation is achieved here in selenium frame work'.
