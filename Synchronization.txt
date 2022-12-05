@@ -1,0 +1,38 @@
+When two or more components work together, they should work in sync in order to achieve the desired result. If those components are not working in parallel or in sync, you may not get expected result. 
+So, working of those components in sync or in parallel is termed as Synchronization.
+Synchronization can be achieved using 
+1.implicit wait
+2.Explicit wait
+3.Fluent wait
+Implicit wait
+ this is the wait applied at driver for findelement and findelements
+ to ask th driver to wait for given duration of time before throwing an exception.
+
+driver.manage.timeouts.pageLoadTimeout(50,TimeUnit.seconds)
+wait for 50 sec unitl the page to load.
+webdriver waits for stipluated time and increase test excution so we can use EXPLICIT WAIT
+Explicit wait is synchronization specific to webelement and so it wait for expected condition is met 
+Explicit waits can be used to wait for that particular element.
+It is applicable to the given control and waits to the maximum amount of time or move forward in case the given condition is met.
+We are explicitly making the execution of selenium code to wait, for a certain condition to occur before, proceeding further in the code.
+fluent wait
+This wait will check for the elements in the DOM for every 5 Secs until the elements found,
+ if the element found within the period it breaks the search for the element and goes for the further action.
+we can also specify to ifnore exceptions.
+ Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+           .withTimeout(30, TimeUnit.SECONDS)
+           .pollingEvery(1, TimeUnit.SECONDS)
+           .ignoring(NoSuchElementException.class);
+       WebElement element = wait.until(new Function<WebDriver, WebElement>() 
+       {
+         public WebElement apply(WebDriver driver) { 
+           return driver.findElement(By.xpath("//a[@class='ico-register']"));
+         } } );
+
+According to me, Best wait is Fluent Wait because
+It works as per customized condition required at run time.
+It gives an option to user to change poll time i.e. At which frequency Dom is to be polled for checking element presence.
+It also gives option to ignore any specific exception while searching which may not be related to search but hinder our search resulting in exception or unoptimized search.
+Provides better support with JavaScript elements which are attached to DOM but are invisible.
+Provides better support to Ajax applications​ as it has option to ignore specific exceptions during element search.
+PREVIOUS
