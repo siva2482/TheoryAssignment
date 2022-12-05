@@ -1,0 +1,12 @@
+.click() method :
+You can use .click() method to click on any button. There is no restriction for click buttons.
+That means element’s type = “button” or type = “submit”, .click() method will works for both.
+If button is inside <form> tag or button is outside <form> tag, the click() method will work.
+
+.submit() method :
+we can use .submit() method for only submit form after click on button.
+That means element’s type = “submit” and button should be inside <form> tag, then only submit() will work.
+If element’s type = “button” means submit() will not work.
+If button outside of the <form> tag means submit() will not work
+
+For Example, Submit() will work if submit button should be inside <form> tag and element type=”submit” as below
