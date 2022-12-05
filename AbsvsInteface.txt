@@ -1,0 +1,18 @@
+Abstract
+
+1.Abstarct is a keyword used to declare abstract class.(A class with atleast a method hiding it its implementation
+and only have method signature.)
+2.Abstract class can have implemented methods also.
+3.A class can inherit only one abstract class.
+4.A class which inherit abstract shouls override or implement method in abstract class.
+5.Multiple inheritance is not possible.
+6.can have both static,nonstatic,finalor non-final variabes
+7.methods can bestatic ,main and also van have constructors.
+
+Interface
+1.interface is a keyword to declare interface.(An interface has unimplemented methods whish is to implemented in child class)
+2.A class can implement interfcae to achieve multiple inheritance)
+3..A class which implement should provide implementation for methods in interface otherwise a class can be abstract
+4.CAn have only static and final variables
+5.no main or constructors.
+6.static and private methods cannot be overridden.                            
