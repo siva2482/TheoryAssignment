@@ -1,0 +1,11 @@
+throw
+1.throw is a keyword to throw an instance of an exception explicitly from inside the block.
+2.it can throw both cjhecked and non checked exceptions.
+3.we can throw only one exeption from using throw
+
+
+throws
+1.throws keyword is used to declare what exception can be thrown from a method.
+throws is followed by exception class name.
+2.it is used in methid signature.
+3.we can declare multiple exeptions in throws keyword
