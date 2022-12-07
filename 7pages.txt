@@ -1,0 +1,4 @@
+if there are 7 pages then to achieve pom as i follow maven directory under src/test/jsva crete pages package and create page class (java class ) for each page.
+inside each page class,i will be using page factory to locate webelements found in each page and write public method to 
+which has code to doactions on theses elements .then for each page i will be creating test class which will call these mehods 
+to do test run and do some assertions.
