@@ -1,0 +1,9 @@
+@BEFORESUITE-runs before first tests tag
+@BEFORETEST-runs before fidrst test that is present in classes tag run
+@BEFORECLASS-runs before before test that is present in the class tag run
+@BEFOREMETHOD-runs before every test method run
+@TEST-this runs for the test method
+@AFTERMETHOD-this runs after every test method
+@AFTERCLASS-this runs afyerr all test method finished running in current class
+@AFTERTEST-this runs after all test in the classes tag has run
+@AFTERSUITE-this run after all test in the tests tag has run
