@@ -1,0 +1,7 @@
+How to handle multiple windows
+wmultiple windows are handled using getwindowhandle and getwindowhandles.
+getwindow handle returns the parent window id as string.
+getwindow handles returns set if window handles of all windows opened by driver.
+we can iterate through the set and use driver.switchto.window(parent or child wondow handle) and move to 
+the corresponding window.
+
