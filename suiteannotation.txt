@@ -1,0 +1,2 @@
+the method which is defined under beforesuite annotation  runs before before any tests in the suite.
+the method with Aftersuite annotation runs after all the tests in the suite has finished .
